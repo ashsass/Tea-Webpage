@@ -1,0 +1,92 @@
+*{
+    border: 1px solid red;
+}
+
+body{
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica;
+    opacity: 0.9;
+    font-size: 22px;
+    /* Need text to be centered horizontally */
+    margin: 0;
+    border: 0;
+}
+
+
+/* Header with navigation */
+.header{
+    /* position: fixed; */
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    height: 69px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teacozy{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.navlink{
+    color: seashell;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.navlink:hover{
+    color: blue;
+}
+
+
+/* Mission */
+.mission{
+    display: flex;
+    justify-content: center;
+}
+
+.picture.container{
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*4lvfr9*_ga*NDIwNTAzNjk0OS4xNjU2ODg5ODk3*_ga_3LRZM6TM9L*MTY1NzQ2MzE5MC4yMy4xLjE2NTc0NzQwNjAuNTg.');
+    height: 700px;
+    width: 1200px;
+    margin: auto 20px;
+    /* flex-direction: column; */
+    
+}
+
+.word.container{
+    background-color: black;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+}
+
+
+/* Tea of the Month (TOM) */
+.tom.heading{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tom.container{
+    width: 1000px;
+}
+
+.tom.picture{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; 
+    width: 1000px;
+}
+
+.tom.pic{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
