@@ -8,7 +8,6 @@ body{
     font-family: Helvetica;
     opacity: 0.9;
     font-size: 22px;
-    /* Need text to be centered horizontally */
     margin: 0;
     border: 0;
 }
@@ -16,13 +15,15 @@ body{
 
 /* Header with navigation */
 .header{
-    /* position: fixed; */
+    position: fixed;
     border-bottom: 1px solid seashell;
     width: 100%;
     height: 69px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    background-color: black;
 }
 
 .teacozy{
@@ -45,23 +46,26 @@ body{
 .mission{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .picture.container{
     background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*4lvfr9*_ga*NDIwNTAzNjk0OS4xNjU2ODg5ODk3*_ga_3LRZM6TM9L*MTY1NzQ2MzE5MC4yMy4xLjE2NTc0NzQwNjAuNTg.');
     height: 700px;
     width: 1200px;
-    margin: auto 20px;
-    
+    margin: 70px 20px 0;
+    display:flex;
+    align-items: center;
 }
 
 .word.container{
     background-color: black;
-    position: relative;
-    top: 50%;
-    bottom: 50%;
     text-align: center;
+    height: 125px;
+    width: 1200px;
+    padding: 0px 0 10px;
 }
+
 
 
 /* Tea of the Month (TOM) */
@@ -73,15 +77,16 @@ body{
     align-items: center;
     margin-top: 35px;
 }
-.tom.heading{
+
+#tom{
+    margin-bottom: 0;
+}
+
+.tom.heading, .tom.container{
     width: 1000px;
-    text-align: center;
-    display: flex;
-    align-content: space-around;
 }
 
 .tom.container{
-    width: 1000px;
     display: inline-flex; 
     flex-direction: row;
     align-items: center;
@@ -102,6 +107,7 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .locationpic{
@@ -109,29 +115,49 @@ body{
     height: 500px;
     width: 1200px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 } 
 
 .location-text{
-    font-size: 1.17em;
-    font-weight: bold;
+    margin: 0;
 }
 
 .bigcontainers{
     display: inline-flex;
-    justify-content: center;
 }
 
 .smallcontainers{
     background-color: black;
     opacity: 0.9;
     width: 300px;
-    margin: 15px 20px;
     align-items: center;
+    margin: 0 20px;
 }
 
 .address{
-    line-height: 50px;
+    line-height: 35px;
+}
+
+/* Footer  */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cozycontact{
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    align-items: end;
+    margin-left: 20px;
 }
